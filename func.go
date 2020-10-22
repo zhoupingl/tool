@@ -26,10 +26,15 @@ func GenerateRandom(n int) string {
 
 func MD5(str string) string {
 
+	return strings.ToUpper(Md5(str))
+}
+
+func Md5(str string) string {
+
 	h := md5.New()
 	h.Write([]byte(str))
 
-	return strings.ToUpper(fmt.Sprintf("%x", h.Sum(nil)))
+	return fmt.Sprintf("%x", h.Sum(nil))
 }
 
 func RunBash(s string) (string, error) {
