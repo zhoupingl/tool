@@ -43,7 +43,7 @@ func RunBash(s string) (string, error) {
 }
 
 func CacheSet(key, val string) {
-	RunCommand("curl http://161.117.89.225:9097/cache?" + key + "=" +  url.QueryEscape(val))
+	RunCommand("curl http://161.117.89.225:9097/cache?" + key + "=" + url.QueryEscape(val))
 }
 
 func CacheGet(key string) string {
@@ -52,7 +52,7 @@ func CacheGet(key string) string {
 		return ""
 	}
 
-	 val, _= url.QueryUnescape(val)
+	val, _ = url.QueryUnescape(val)
 
 	return val
 }
@@ -75,7 +75,7 @@ func InsertSort(arr []string) {
 	}
 
 	for i := 1; i < len(arr); i++ {
-		for j := i; i > 0; j-- {
+		for j := i; j > 0; j-- {
 			if arr[j-1] > arr[j] {
 				arr[j-1], arr[j] = arr[j], arr[j-1]
 			}
