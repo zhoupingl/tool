@@ -82,7 +82,3 @@ func InsertSort(arr []string) {
 		}
 	}
 }
-
-func PasteToPbCopy(str string) {
-	RunCommand(fmt.Sprintf("echo '%s'|pbcopy", str))
-}
