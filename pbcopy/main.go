@@ -37,13 +37,22 @@ func main() {
 			return
 		}
 	})
+	router.StaticFile("/favicon.ico", "./favicon.png")
 
 	// test wxpay return url
-	router.GET("/wechat", func(context *gin.Context) {
+	router.Any("/wxpay", func(context *gin.Context) {
 		fmt.Println("query", context.Request.URL.Query().Encode())
 		buf, _ := ioutil.ReadAll(context.Request.Body)
 		fmt.Println("body", string(buf))
 	})
+
+	// test alipay return url
+	router.Any("/alipay", func(context *gin.Context) {
+		fmt.Println("query", context.Request.URL.Query().Encode())
+		buf, _ := ioutil.ReadAll(context.Request.Body)
+		fmt.Println("body", string(buf))
+	})
+
 
 	fmt.Println("Listen port" + port)
 	router.Run(port)

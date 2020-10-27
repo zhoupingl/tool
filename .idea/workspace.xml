@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f2cbbe8a-e6d7-4268-9da0-73d87d1687e8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pbcopy/test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/func.go" beforeDir="false" afterPath="$PROJECT_DIR$/func.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/func_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/func_test.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pbcopy/http.http" beforeDir="false" afterPath="$PROJECT_DIR$/pbcopy/http.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pbcopy/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pbcopy/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbcopy/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,25 +30,35 @@
     <option name="directoryName" value="szp808in" />
   </component>
   <component name="ProjectId" id="1jE6La7mmYOc2QaAcdi6GfMWeCz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable.Global.GOPATH.is.expanded" value="true" />
+    <property name="configurable.Module.GOPATH.is.expanded" value="false" />
+    <property name="configurable.Project.GOPATH.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pbcopy" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="go.vgo" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pbcopy" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pbcopy" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -98,7 +106,15 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.http#1">
+  <component name="RunManager" selected="Go Build.go build main.go">
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="tool" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/pbcopy/main.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestInsertSort in func_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="tool" />
       <working_directory value="$PROJECT_DIR$" />
@@ -128,26 +144,23 @@
       <filePath value="$PROJECT_DIR$/func_test.go" />
       <method v="2" />
     </configuration>
-    <configuration name="get-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" index="2" runType="Run single request">
-      <method v="2" />
-    </configuration>
     <configuration name="http#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/pbcopy/http.http" runType="Run single request">
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Go Build.go build main.go" />
       <item itemvalue="Go Test.func_test.go" />
       <item itemvalue="Go Test.TestInsertSort in " />
       <item itemvalue="Go Test.TestInsertSort in func_test.go" />
-      <item itemvalue="HTTP Request.get-requests#2" />
       <item itemvalue="HTTP Request.http#1" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="HTTP Request.http#1" />
         <item itemvalue="Go Test.TestInsertSort in func_test.go" />
         <item itemvalue="Go Test.TestInsertSort in " />
         <item itemvalue="Go Test.func_test.go" />
-        <item itemvalue="HTTP Request.get-requests#2" />
       </list>
     </recent_temporary>
   </component>
@@ -155,26 +168,45 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>true</integration-enabled>
+    <environment>
+      <map>
+        <entry key="GOPROXY" value="https://goproxy.io" />
+      </map>
+    </environment>
+  </component>
   <component name="WindowStateProjectService">
     <state x="286" y="198" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603701912681">
       <screen x="0" y="23" width="1643" height="1027" />
     </state>
     <state x="286" y="198" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1643.1027@0.23.1643.1027" timestamp="1603701912681" />
-    <state width="1601" height="279" key="GridCell.Tab.0.bottom" timestamp="1603713065069">
+    <state x="721" y="405" key="EnvironmentVariablesDialog" timestamp="1603780820069">
       <screen x="0" y="23" width="1643" height="1027" />
     </state>
-    <state width="1601" height="279" key="GridCell.Tab.0.bottom/0.23.1643.1027@0.23.1643.1027" timestamp="1603713065069" />
-    <state width="1601" height="279" key="GridCell.Tab.0.center" timestamp="1603713065068">
+    <state x="721" y="405" key="EnvironmentVariablesDialog/0.23.1643.1027@0.23.1643.1027" timestamp="1603780820069" />
+    <state width="1601" height="388" key="GridCell.Tab.0.bottom" timestamp="1603787925882">
       <screen x="0" y="23" width="1643" height="1027" />
     </state>
-    <state width="1601" height="279" key="GridCell.Tab.0.center/0.23.1643.1027@0.23.1643.1027" timestamp="1603713065068" />
-    <state width="1601" height="279" key="GridCell.Tab.0.left" timestamp="1603713065067">
+    <state width="1601" height="388" key="GridCell.Tab.0.bottom/0.23.1643.1027@0.23.1643.1027" timestamp="1603787925882" />
+    <state width="1601" height="388" key="GridCell.Tab.0.center" timestamp="1603787925881">
       <screen x="0" y="23" width="1643" height="1027" />
     </state>
-    <state width="1601" height="279" key="GridCell.Tab.0.left/0.23.1643.1027@0.23.1643.1027" timestamp="1603713065067" />
-    <state width="1601" height="279" key="GridCell.Tab.0.right" timestamp="1603713065068">
+    <state width="1601" height="388" key="GridCell.Tab.0.center/0.23.1643.1027@0.23.1643.1027" timestamp="1603787925881" />
+    <state width="1601" height="388" key="GridCell.Tab.0.left" timestamp="1603787925880">
       <screen x="0" y="23" width="1643" height="1027" />
     </state>
-    <state width="1601" height="279" key="GridCell.Tab.0.right/0.23.1643.1027@0.23.1643.1027" timestamp="1603713065068" />
+    <state width="1601" height="388" key="GridCell.Tab.0.left/0.23.1643.1027@0.23.1643.1027" timestamp="1603787925880" />
+    <state width="1601" height="388" key="GridCell.Tab.0.right" timestamp="1603787925881">
+      <screen x="0" y="23" width="1643" height="1027" />
+    </state>
+    <state width="1601" height="388" key="GridCell.Tab.0.right/0.23.1643.1027@0.23.1643.1027" timestamp="1603787925881" />
+    <state x="323" y="175" key="SettingsEditor" timestamp="1603780821591">
+      <screen x="0" y="23" width="1643" height="1027" />
+    </state>
+    <state x="323" y="175" key="SettingsEditor/0.23.1643.1027@0.23.1643.1027" timestamp="1603780821591" />
   </component>
 </project>
