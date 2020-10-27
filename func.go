@@ -43,11 +43,11 @@ func RunBash(s string) (string, error) {
 }
 
 func CacheSet(key, val string) {
-	RunCommand("curl http://161.117.89.225:9097/?" + key + "=" +  url.QueryEscape(val))
+	RunCommand("curl http://161.117.89.225:9097/cache?" + key + "=" +  url.QueryEscape(val))
 }
 
 func CacheGet(key string) string {
-	val, _ := RunCommand("curl http://161.117.89.225:9097/?" + key + "=")
+	val, _ := RunCommand("curl http://161.117.89.225:9097/cache?" + key + "=")
 	if val == "" {
 		return ""
 	}
