@@ -1,84 +1,14 @@
 package tool
 
 import (
-	"bytes"
-	"crypto/md5"
-	"encoding/base64"
 	"fmt"
-	"math/rand"
-	"os/exec"
-	"strings"
-	"time"
+	"testing"
 )
 
-var letters = []rune("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+func TestInsertSort(t *testing.T) {
 
-func GenerateRandom(n int) string {
+	arr := []string{"3", "2", "1"}
+	InsertSort(arr)
+	fmt.Println(arr)
 
-	// 随机种子
-	rand.Seed(time.Now().UnixNano())
-
-	b := make([]rune, n)
-	for i := range b {
-		b[i] = letters[rand.Intn(len(letters))]
-	}
-	return string(b)
-}
-
-func MD5(str string) string {
-
-	return strings.ToUpper(Md5(str))
-}
-
-func Md5(str string) string {
-
-	h := md5.New()
-	h.Write([]byte(str))
-
-	return fmt.Sprintf("%x", h.Sum(nil))
-}
-
-func RunBash(s string) (string, error) {
-	return RunCommand(s)
-}
-
-func CacheSet(key, val string) {
-	RunCommand("curl http://161.117.89.225:9097/?" + key + "=" + base64.URLEncoding.EncodeToString([]byte(val)))
-}
-
-func CacheGet(key string) string {
-	val, _ := RunCommand("curl http://161.117.89.225:9097/?" + key + "=")
-	if val == "" {
-		return ""
-	}
-
-	var buf, _ = base64.URLEncoding.DecodeString(val)
-
-	return string(buf)
-}
-
-func RunCommand(s string) (string, error) {
-	//函数返回一个*Cmd，用于使用给出的参数执行name指定的程序
-	cmd := exec.Command("/bin/bash", "-c", s)
-
-	var out bytes.Buffer
-	cmd.Stdout = &out
-
-	err := cmd.Run()
-
-	return out.String(), err
-}
-
-func InsertSort(arr []string) {
-	if len(arr) <= 1 {
-		return
-	}
-
-	for i := 1; i < len(arr); i++ {
-		for j := i; i > 0; j-- {
-			if arr[j-1] > arr[j] {
-				arr[j-1], arr[j] = arr[j], arr[j-1]
-			}
-		}
-	}
 }

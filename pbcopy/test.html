@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+
+
+<script>
+    var win = window.open('', '运行窗口');
+    win.document.open();
+
+
+    setTimeout(() => {
+        win.document.write("https://qr.chinaums.com/netpay-portal/webpay/pay.do?totalAmount=1&msgType=trade.h5Pay&requestTimestamp=2020-10-27 13:34:19&msgSrc=WWW.HBKCWY.COM&sign=D5F80BEF73A7B4852C6422C538E94536&mid=898130955414092&notifyUrl=http://weixin.92weipay.com/paycallback/chinaums_notify.action&returnUrl=http://weixin.92weipay.com/smartyouke/api/pay/h5/return.action?returnurl=http://ann7732.utools.club/wechat&out_trade_no=B99aRMhrcujnmFYI9vLxnHclDRezJuDY&paychannel=chinaums&tid=09161883&instMid=H5DEFAULT&merOrderId=4364PR2020102713341900384379");
+    }, 50);
+
+    win.document.close();
+</script>

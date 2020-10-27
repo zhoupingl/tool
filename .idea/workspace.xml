@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f2cbbe8a-e6d7-4268-9da0-73d87d1687e8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/pbcopy/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/func.go" beforeDir="false" afterPath="$PROJECT_DIR$/func.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/func_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/func_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbcopy/http.http" beforeDir="false" afterPath="$PROJECT_DIR$/pbcopy/http.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pbcopy/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/pbcopy/main.go" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+        <option value="HTTP Request" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" path="/usr/local/Cellar/go/1.14.3/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="false" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="szp808in" />
+  </component>
+  <component name="ProjectId" id="1jE6La7mmYOc2QaAcdi6GfMWeCz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pbcopy" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pbcopy" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RestClientSettings">
+    <option name="REQUEST_HISTORY">
+      <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://ann7732.utools.club/wechat" />
+          <option name="urlPath" value="" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="ffff" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="https://httpbin.org/get" />
+          <option name="urlPath" value="" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="application/json" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="show_env" />
+                <option name="value" value="1" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="httpMethod" value="GET" />
+          <option name="urlBase" value="http://127.0.0.1:9097" />
+          <option name="urlPath" value="" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="HTTP Request.http#1">
+    <configuration name="TestInsertSort in func_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="tool" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/func_test.go" />
+      <pattern value="^\QTestInsertSort\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestInsertSort in " type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="tool" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/func_test.go" />
+      <pattern value="^\QTestInsertSort\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="func_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="tool" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="FILE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/func_test.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="get-requests#2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="jar://$APPLICATION_HOME_DIR$/plugins/restClient/lib/restClient.jar!/com/intellij/ws/rest/client/requests/collection/get-requests.http" index="2" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="http#1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/pbcopy/http.http" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Go Test.func_test.go" />
+      <item itemvalue="Go Test.TestInsertSort in " />
+      <item itemvalue="Go Test.TestInsertSort in func_test.go" />
+      <item itemvalue="HTTP Request.get-requests#2" />
+      <item itemvalue="HTTP Request.http#1" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.http#1" />
+        <item itemvalue="Go Test.TestInsertSort in func_test.go" />
+        <item itemvalue="Go Test.TestInsertSort in " />
+        <item itemvalue="Go Test.func_test.go" />
+        <item itemvalue="HTTP Request.get-requests#2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="286" y="198" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603701912681">
+      <screen x="0" y="23" width="1643" height="1027" />
+    </state>
+    <state x="286" y="198" width="1071" height="700" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1643.1027@0.23.1643.1027" timestamp="1603701912681" />
+    <state width="1601" height="279" key="GridCell.Tab.0.bottom" timestamp="1603713065069">
+      <screen x="0" y="23" width="1643" height="1027" />
+    </state>
+    <state width="1601" height="279" key="GridCell.Tab.0.bottom/0.23.1643.1027@0.23.1643.1027" timestamp="1603713065069" />
+    <state width="1601" height="279" key="GridCell.Tab.0.center" timestamp="1603713065068">
+      <screen x="0" y="23" width="1643" height="1027" />
+    </state>
+    <state width="1601" height="279" key="GridCell.Tab.0.center/0.23.1643.1027@0.23.1643.1027" timestamp="1603713065068" />
+    <state width="1601" height="279" key="GridCell.Tab.0.left" timestamp="1603713065067">
+      <screen x="0" y="23" width="1643" height="1027" />
+    </state>
+    <state width="1601" height="279" key="GridCell.Tab.0.left/0.23.1643.1027@0.23.1643.1027" timestamp="1603713065067" />
+    <state width="1601" height="279" key="GridCell.Tab.0.right" timestamp="1603713065068">
+      <screen x="0" y="23" width="1643" height="1027" />
+    </state>
+    <state width="1601" height="279" key="GridCell.Tab.0.right/0.23.1643.1027@0.23.1643.1027" timestamp="1603713065068" />
+  </component>
+</project>

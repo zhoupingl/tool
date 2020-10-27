@@ -3,9 +3,9 @@ package tool
 import (
 	"bytes"
 	"crypto/md5"
-	"encoding/base64"
 	"fmt"
 	"math/rand"
+	"net/url"
 	"os/exec"
 	"strings"
 	"time"
@@ -43,7 +43,7 @@ func RunBash(s string) (string, error) {
 }
 
 func CacheSet(key, val string) {
-	RunCommand("curl http://161.117.89.225:9097/?" + key + "=" + base64.URLEncoding.EncodeToString([]byte(val)))
+	RunCommand("curl http://161.117.89.225:9097/?" + key + "=" +  url.QueryEscape(val))
 }
 
 func CacheGet(key string) string {
@@ -52,9 +52,9 @@ func CacheGet(key string) string {
 		return ""
 	}
 
-	var buf, _ = base64.URLEncoding.DecodeString(val)
+	 val, _= url.QueryUnescape(val)
 
-	return string(buf)
+	return val
 }
 
 func RunCommand(s string) (string, error) {
