@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
+	"github.com/gin-gonic/gin"
 	"io/ioutil"
-	"net/http"
 	"sync"
 )
 
@@ -22,33 +22,30 @@ func set(key, val string) {
 	data[key] = val
 }
 
+const port = ":9097"
+
 func main() {
+	router := gin.Default()
 
-	// static file dir
-	h := http.FileServer(http.Dir("/Users/ann/www/tool/pbcopy"))
-
-	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
-		for k, values := range request.URL.Query() {
-			for _, v := range values {
-				if v == "" {
-					writer.Write([]byte(get(k)))
-					return
-				} else {
-					set(k, v)
-					writer.Write([]byte(v))
-					return
-				}
+	// cache system
+	router.GET("/cache", func(context *gin.Context) {
+		for key, values := range context.Request.URL.Query() {
+			if !(values[0] == "") {
+				set(key, values[0])
 			}
+			context.String(200, get(key))
+			return
 		}
 	})
 
-	http.HandleFunc("/wechat", func(writer http.ResponseWriter, request *http.Request) {
-		fmt.Println("query", request.URL.Query().Encode())
-		buf, _ := ioutil.ReadAll(request.Body)
+	// test wxpay return url
+	router.GET("/wechat", func(context *gin.Context) {
+		fmt.Println("query", context.Request.URL.Query().Encode())
+		buf, _ := ioutil.ReadAll(context.Request.Body)
 		fmt.Println("body", string(buf))
 	})
 
-	const port = ":9097"
-	fmt.Println("Listen port:" + port)
-	http.ListenAndServe(port, h)
+	fmt.Println("Listen port" + port)
+	router.Run(port)
+
 }
