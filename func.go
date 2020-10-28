@@ -83,6 +83,33 @@ func InsertSort(arr []string) {
 	}
 }
 
+// 快速排序
+func QuickSort(arr []string) {
+	if len(arr) <= 1 {
+		return
+	}
+
+	var left = 0
+	var right = len(arr) - 1
+	var partition = arr[left]
+
+	for left < right {
+		if arr[left] < partition {
+			left++
+			continue
+		}
+
+		if arr[right] > partition {
+			right--
+			continue
+		}
+
+		// 交换值
+		arr[left], arr[right] = arr[right], arr[left]
+	}
+	arr[left] = partition
+}
+
 func PasteToPbCopy(str string) {
 	RunCommand(fmt.Sprintf("echo '%s'|pbcopy", str))
 }
